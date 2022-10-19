@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <Authors>DCoats</Authors>
+    <Company>Rivet</Company>
+    <Copyright>Copyright (c) Rivet 2022</Copyright>
+    <Description>--- ADD DESCRIPTION ---</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/SafetyCone/R5T.T0140.git</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.F0000\source\R5T.F0000\R5T.F0000.csproj" />
+    <ProjectReference Include="..\..\..\R5T.T0131\source\R5T.T0131\R5T.T0131.csproj" />
+    <ProjectReference Include="..\..\..\R5T.T0132\source\R5T.T0132\R5T.T0132.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Y0000\source\R5T.Y0000\R5T.Y0000.csproj" />
+    <ProjectReference Include="..\R5T.T0140\R5T.T0140.csproj" />
+  </ItemGroup>
+</Project>
