@@ -1,11 +1,14 @@
 ﻿using System;
 
+using R5T.T0142;
+
 
 namespace R5T.T0140
 {
     /// <summary>
     /// A class providing example properties.
     /// </summary>
+    [UtilityTypeMarker]
     public class ExampleProperties
     {
         /// <summary>
@@ -61,6 +64,7 @@ namespace R5T.T0140
     /// <summary>
     /// A generic class providing example properties.
     /// </summary>
+    [UtilityTypeMarker]
     public class ExampleProperties<T>
     {
         /// <summary>

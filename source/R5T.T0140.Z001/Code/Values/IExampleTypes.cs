@@ -26,17 +26,17 @@ namespace R5T.T0140.Z001
 		/// <summary>
 		/// <inheritdoc cref="Y0000.Glossary.ForType.OpenGeneric" path="/definition"/>
 		/// </summary>
-		public Type OpenGeneric_SingleTypeParameter => typeof(ExampleClass01<>);
+		public Type OpenGenericClass_SingleTypeParameter => typeof(ExampleClass01<>);
 
 		/// <summary>
-		/// Chooses <see cref="OpenGeneric_SingleTypeParameter"/> as the default.
+		/// Chooses <see cref="OpenGenericClass_SingleTypeParameter"/> as the default.
 		/// </summary>
-		public Type OpenGeneric => this.OpenGeneric_SingleTypeParameter;
+		public Type OpenGenericClass => this.OpenGenericClass_SingleTypeParameter;
 
 		/// <summary>
 		/// <inheritdoc cref="Y0000.Glossary.ForType.OpenGeneric" path="/definition"/>
 		/// </summary>
-		public Type OpenGeneric_DoubleTypeParameter => typeof(ExampleClass02<,>);
+		public Type OpenGenericClass_DoubleTypeParameter => typeof(ExampleClass02<,>);
 
 		/// <summary>
 		/// <inheritdoc cref="Y0000.Glossary.ForType.PartiallyConstructedGeneric" path="/definition"/>
@@ -45,6 +45,16 @@ namespace R5T.T0140.Z001
 
 		public Type NonGeneric => typeof(String);
 
-		public Type Simple => typeof(String);
-	}
+		public Type BasicClass => this.BasicClass_NonSystem;
+
+		/// <summary>
+		/// A basic class not from the <see cref="System"/> namespace.
+		/// </summary>
+		public Type BasicClass_NonSystem => typeof(ExampleClass00);
+
+		/// <summary>
+		/// A class type from the <see cref="System"/> namespace.
+		/// </summary>
+        public Type BasicClass_System => typeof(String);
+    }
 }

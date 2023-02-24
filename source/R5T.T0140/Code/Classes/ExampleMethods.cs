@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using R5T.T0142;
+
 
 namespace R5T.T0140
 {
     /// <summary>
     /// A class providing example methods.
     /// </summary>
+    [UtilityTypeMarker]
     public class ExampleMethods
     {
         /// <summary>
@@ -107,11 +110,21 @@ namespace R5T.T0140
         public void Method12<T>()
             where T : Class01
         { }
+
+        /// <summary>
+        /// A method taking a nested closed generic argument.
+        /// </summary>
+#pragma warning disable IDE0060 // Remove unused parameter
+        public void Method13(Dictionary<string, List<ExampleClass00>> values, string @string)
+#pragma warning restore IDE0060 // Remove unused parameter
+        { }
     }
+
 
     /// <summary>
     /// A generic class providing example methods.
     /// </summary>
+    [UtilityTypeMarker]
     public class ExampleMethods<T>
     {
         /// <summary>
