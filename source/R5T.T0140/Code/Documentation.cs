@@ -8,5 +8,9 @@ namespace R5T.T0140
     /// </summary>
     public static class Documentation
     {
+        /// <summary>
+        /// A closed generic is like <see cref="ExampleMethods.Method14(System.Collections.Generic.List{string})"/>
+        /// </summary>
+        public static readonly object ClosedGeneric;
     }
 }

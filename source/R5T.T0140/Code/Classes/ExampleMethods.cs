@@ -118,6 +118,11 @@ namespace R5T.T0140
         public void Method13(Dictionary<string, List<ExampleClass00>> values, string @string)
 #pragma warning restore IDE0060 // Remove unused parameter
         { }
+
+#pragma warning disable IDE0060 // Remove unused parameter
+        public void Method14(List<string> strings)
+#pragma warning restore IDE0060 // Remove unused parameter
+        { }
     }
 
 

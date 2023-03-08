@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using R5T.T0142;
 
 
@@ -58,6 +58,11 @@ namespace R5T.T0140
         /// Static property with get and set.
         /// </summary>
         public static string Property10 { get; set; }
+
+        /// <summary>
+        /// A closed generically-typed property.
+        /// </summary>
+        public List<string> Property11 { get; set; }
     }
 
 
