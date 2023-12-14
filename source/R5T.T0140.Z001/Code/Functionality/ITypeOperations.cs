@@ -10,7 +10,7 @@ namespace R5T.T0140.Z001
 	{
 		public Type GetPartiallyConstructedType()
 		{
-			var openGenericTypeArgument = Instances.TypeOperator.GetGenericTypeParameters(typeof(ExampleClass02<,>))[1];
+			var openGenericTypeArgument = Instances.TypeOperator.Get_GenericTypeParameters_OfType(typeof(ExampleClass02<,>))[1];
 
 			var partiallyConstructedType = typeof(ExampleClass02<,>)
 				.MakeGenericType(
